@@ -76,12 +76,12 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);min-height:10
 .need-section{margin-bottom:1.25rem}
 .need-section-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink3);margin-bottom:.55rem;display:flex;align-items:center;gap:.45rem}
 .need-section-label::after{content:'';flex:1;height:1px;background:var(--border)}
-.chips-wrap{display:flex;flex-wrap:wrap;gap:.35rem}
-.chip{display:inline-flex;align-items:center;gap:.4rem;border:1.5px solid var(--border2);border-radius:8px;padding:.42rem .78rem;cursor:pointer;font-size:.8rem;color:var(--ink3);font-weight:500;background:white;transition:all .15s;user-select:none}
-.chip:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-l)}
-.chip.on{border-color:var(--teal);background:var(--teal-l);color:var(--teal2);font-weight:600}
-.chip .chip-dot{width:8px;height:8px;border-radius:50%;background:var(--border2);flex-shrink:0;transition:background .15s}
-.chip.on .chip-dot{background:var(--teal)}
+.chips-wrap{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.35rem}
+button.chip{display:inline-flex;align-items:center;gap:.4rem;border:2px solid #CBD5E1;border-radius:8px;padding:.45rem .85rem;cursor:pointer;font-size:.82rem;color:#3D5166;font-weight:500;background:#FFFFFF;transition:all .15s;user-select:none;font-family:'DM Sans',sans-serif;line-height:1.4;text-align:left;outline:none;box-shadow:0 1px 3px rgba(0,0,0,.06);-webkit-appearance:none;appearance:none}
+button.chip:hover{border-color:#0B7691;color:#0B7691;background:#D0F4EE;box-shadow:0 2px 8px rgba(11,118,145,.12)}
+button.chip.on{border-color:#0B7691;background:#D0F4EE;color:#085566;font-weight:700;box-shadow:0 2px 8px rgba(11,118,145,.15)}
+.chip-dot{width:9px;height:9px;border-radius:50%;background:#CBD5E1;flex-shrink:0;transition:background .15s;display:inline-block}
+button.chip.on .chip-dot{background:#0B7691}
 
 /* ── FREETEXT NEED ── */
 .ft-wrap{display:flex;gap:.5rem;align-items:flex-start;margin-top:.75rem}
@@ -358,23 +358,63 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);min-height:10
 
       <div class="need-section">
         <div class="need-section-label">Academic & Learning</div>
-        <div class="chips-wrap" id="chips-academic"></div>
+        <div class="chips-wrap" id="chips-academic">
+        <button type="button" class="chip" id="chip-literacy"><span class="chip-dot"></span>📖 Reading / literacy gaps</button>
+        <button type="button" class="chip" id="chip-math"><span class="chip-dot"></span>🔢 Math struggles</button>
+        <button type="button" class="chip" id="chip-credits"><span class="chip-dot"></span>📋 Credit deficiency / behind grade</button>
+        <button type="button" class="chip" id="chip-hs-diploma"><span class="chip-dot"></span>🎓 Needs HS diploma as adult</button>
+        <button type="button" class="chip" id="chip-sped"><span class="chip-dot"></span>🧩 Suspected learning disability / IEP needed</button>
+        <button type="button" class="chip" id="chip-iep-active"><span class="chip-dot"></span>📑 Active IEP — services coordination</button>
+        <button type="button" class="chip" id="chip-ell"><span class="chip-dot"></span>🌐 English learner support</button>
+        <button type="button" class="chip" id="chip-tutoring"><span class="chip-dot"></span>✏️ Needs 1:1 tutoring</button>
+        <button type="button" class="chip" id="chip-postsec"><span class="chip-dot"></span>🏫 Post-secondary / college pathway</button>
+        <button type="button" class="chip" id="chip-career"><span class="chip-dot"></span>🔧 Career / trades pathway (CTE)</button>
+      </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Attendance & Engagement</div>
-        <div class="chips-wrap" id="chips-attendance"></div>
+        <div class="chips-wrap" id="chips-attendance">
+        <button type="button" class="chip" id="chip-truancy"><span class="chip-dot"></span>🚨 Chronic truancy / absences</button>
+        <button type="button" class="chip" id="chip-home-visit"><span class="chip-dot"></span>🏠 Family not responding — home visit needed</button>
+        <button type="button" class="chip" id="chip-re-engage"><span class="chip-dot"></span>🔄 Disengaged — needs re-engagement</button>
+        <button type="button" class="chip" id="chip-dropout"><span class="chip-dot"></span>⚠️ At risk of dropping out</button>
+        <button type="button" class="chip" id="chip-expelled"><span class="chip-dot"></span>📁 Expelled / returning from expulsion</button>
+        <button type="button" class="chip" id="chip-jjc-return"><span class="chip-dot"></span>🔓 Returning from JJC / Camp Sweeney</button>
+      </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Social-Emotional & Behavioral</div>
-        <div class="chips-wrap" id="chips-social"></div>
+        <div class="chips-wrap" id="chips-social">
+        <button type="button" class="chip" id="chip-mh"><span class="chip-dot"></span>🧠 Mental health concerns</button>
+        <button type="button" class="chip" id="chip-trauma"><span class="chip-dot"></span>💙 Trauma history / PTSD indicators</button>
+        <button type="button" class="chip" id="chip-behavior"><span class="chip-dot"></span>🛑 Behavioral challenges in school</button>
+        <button type="button" class="chip" id="chip-crisis"><span class="chip-dot"></span>🆘 Student in active crisis</button>
+        <button type="button" class="chip" id="chip-substance"><span class="chip-dot"></span>⚕️ Substance use concerns</button>
+        <button type="button" class="chip" id="chip-violence"><span class="chip-dot"></span>🛡️ Connected to violence / high-risk</button>
+      </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Family & Basic Needs</div>
-        <div class="chips-wrap" id="chips-family"></div>
+        <div class="chips-wrap" id="chips-family">
+        <button type="button" class="chip" id="chip-foster"><span class="chip-dot"></span>🏡 Foster care / child welfare involved</button>
+        <button type="button" class="chip" id="chip-probation"><span class="chip-dot"></span>⚖️ On probation / justice involved</button>
+        <button type="button" class="chip" id="chip-housing"><span class="chip-dot"></span>🏘️ Housing instability / homeless</button>
+        <button type="button" class="chip" id="chip-food"><span class="chip-dot"></span>🥗 Food insecurity / basic needs</button>
+        <button type="button" class="chip" id="chip-parent"><span class="chip-dot"></span>👨‍👩‍👧 Parent needs support / engagement</button>
+        <button type="button" class="chip" id="chip-language"><span class="chip-dot"></span>💬 Family language barrier</button>
+        <button type="button" class="chip" id="chip-infant"><span class="chip-dot"></span>👶 Infant (0–3) with developmental delays</button>
+      </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Life Stage & Transition</div>
-        <div class="chips-wrap" id="chips-life"></div>
+        <div class="chips-wrap" id="chips-life">
+        <button type="button" class="chip" id="chip-pregnant"><span class="chip-dot"></span>🤱 Pregnant or parenting teen</button>
+        <button type="button" class="chip" id="chip-childcare"><span class="chip-dot"></span>👶 Needs childcare to attend school</button>
+        <button type="button" class="chip" id="chip-aging-out"><span class="chip-dot"></span>🔑 Aging out of foster care (18+)</button>
+        <button type="button" class="chip" id="chip-adult-ed"><span class="chip-dot"></span>📚 Adult learner returning to school</button>
+        <button type="button" class="chip" id="chip-transition"><span class="chip-dot"></span>🚀 Transitioning out of system</button>
+        <button type="button" class="chip" id="chip-employment"><span class="chip-dot"></span>💼 Needs employment / job training</button>
+      </div>
       </div>
 
       <div class="need-section">
@@ -709,18 +749,23 @@ let currentStep = 1;
 //  BUILD CHIPS
 // ═══════════════════════════════════════════
 function buildChips() {
-  Object.entries(NEED_CATS).forEach(([containerId, needs]) => {
-    const wrap = document.getElementById(containerId);
-    if (!wrap) return;
-    wrap.innerHTML = needs.map(n => `
-      <div class="chip" id="chip-${n.id}" onclick="toggleNeed('${n.id}')">
-        <span class="chip-dot"></span>${n.icon} ${n.label}
-      </div>`).join('');
+  // Chips are already in the HTML — just attach click listeners
+  Object.entries(NEED_CATS).forEach(function(entry) {
+    var needs = entry[1];
+    needs.forEach(function(n) {
+      var btn = document.getElementById('chip-' + n.id);
+      if (!btn) return;
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        toggleNeed(n.id);
+      });
+    });
   });
 }
 
 function toggleNeed(id) {
   const chip = document.getElementById('chip-' + id);
+  if (!chip) { console.warn('chip not found:', id); return; }
   if (selectedNeeds.has(id)) {
     selectedNeeds.delete(id);
     chip.classList.remove('on');
@@ -1392,33 +1437,11 @@ function copyIds() {
 }
 
 // ─── Init ─────────────────────────────────
-applyStoredContacts();     // paint from cache first (instant)
-buildChips();
+document.addEventListener('DOMContentLoaded', function() {
+  applyStoredContacts();
+  buildChips();
+});
 </script>
-    <div style="background:var(--bg);border-radius:var(--r);padding:1rem;margin-bottom:.75rem">
-      <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);margin-bottom:.5rem">Step 2 — Share the Sheet (view only)</div>
-      <div style="font-size:.82rem;color:var(--ink2);line-height:1.75">
-        Click <strong>Share</strong> → <strong>Change to anyone with the link</strong> → make sure it says <strong>"Viewer"</strong> → click Done.<br>
-        <span style="color:var(--green);font-weight:600">That's it — no "Publish to web", no Apps Script, no authorization.</span>
-      </div>
-    </div>
-
-    <div style="background:var(--bg);border-radius:var(--r);padding:1rem;margin-bottom:.75rem">
-      <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);margin-bottom:.5rem">Step 3 — Paste the URL below</div>
-      <div style="font-size:.82rem;color:var(--ink2);line-height:1.65;margin-bottom:.5rem">Copy the URL from your browser address bar while the sheet is open and paste it here.</div>
-      <div style="display:flex;gap:.4rem">
-        <input id="setup-url-inp" type="url" placeholder="https://docs.google.com/spreadsheets/d/…/edit" style="flex:1;border:1.5px solid var(--border2);border-radius:9px;padding:.5rem .85rem;font-family:var(--mono);font-size:.72rem;color:var(--ink);outline:none;transition:border-color .15s">
-        <button onclick="testSheetConnection()" class="modal-cancel" style="white-space:nowrap;flex-shrink:0">Test</button>
-      </div>
-      <div style="margin-top:.5rem;font-size:.75rem;color:var(--ink4)">The app reads your sheet using Google's own data API — no scripts or proxies needed.</div>
-    </div>
-
-    <div class="modal-actions">
-      <button class="modal-cancel" onclick="closeSetupModal()">Cancel</button>
-      <button class="modal-save" onclick="connectSheet()">Connect & Sync →</button>
-    </div>
-  </div>
-</div>
 
 <!-- ── EDIT CONTACT MODAL ── -->
 <div class="modal-overlay" id="edit-modal">
