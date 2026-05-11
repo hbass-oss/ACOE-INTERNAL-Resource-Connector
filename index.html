@@ -359,61 +359,61 @@ button.chip.on .chip-dot{background:#0B7691}
       <div class="need-section">
         <div class="need-section-label">Academic & Learning</div>
         <div class="chips-wrap" id="chips-academic">
-        <button type="button" class="chip" id="chip-literacy"><span class="chip-dot"></span>📖 Reading / literacy gaps</button>
-        <button type="button" class="chip" id="chip-math"><span class="chip-dot"></span>🔢 Math struggles</button>
-        <button type="button" class="chip" id="chip-credits"><span class="chip-dot"></span>📋 Credit deficiency / behind grade</button>
-        <button type="button" class="chip" id="chip-hs-diploma"><span class="chip-dot"></span>🎓 Needs HS diploma as adult</button>
-        <button type="button" class="chip" id="chip-sped"><span class="chip-dot"></span>🧩 Suspected learning disability / IEP needed</button>
-        <button type="button" class="chip" id="chip-iep-active"><span class="chip-dot"></span>📑 Active IEP — services coordination</button>
-        <button type="button" class="chip" id="chip-ell"><span class="chip-dot"></span>🌐 English learner support</button>
-        <button type="button" class="chip" id="chip-tutoring"><span class="chip-dot"></span>✏️ Needs 1:1 tutoring</button>
-        <button type="button" class="chip" id="chip-postsec"><span class="chip-dot"></span>🏫 Post-secondary / college pathway</button>
-        <button type="button" class="chip" id="chip-career"><span class="chip-dot"></span>🔧 Career / trades pathway (CTE)</button>
+        <button type="button" class="chip" id="chip-literacy" onclick="toggleNeed('literacy')"><span class="chip-dot"></span>📖 Reading / literacy gaps</button>
+        <button type="button" class="chip" id="chip-math" onclick="toggleNeed('math')"><span class="chip-dot"></span>🔢 Math struggles</button>
+        <button type="button" class="chip" id="chip-credits" onclick="toggleNeed('credits')"><span class="chip-dot"></span>📋 Credit deficiency / behind grade</button>
+        <button type="button" class="chip" id="chip-hs-diploma" onclick="toggleNeed('hs-diploma')"><span class="chip-dot"></span>🎓 Needs HS diploma as adult</button>
+        <button type="button" class="chip" id="chip-sped" onclick="toggleNeed('sped')"><span class="chip-dot"></span>🧩 Suspected learning disability / IEP needed</button>
+        <button type="button" class="chip" id="chip-iep-active" onclick="toggleNeed('iep-active')"><span class="chip-dot"></span>📑 Active IEP — services coordination</button>
+        <button type="button" class="chip" id="chip-ell" onclick="toggleNeed('ell')"><span class="chip-dot"></span>🌐 English learner support</button>
+        <button type="button" class="chip" id="chip-tutoring" onclick="toggleNeed('tutoring')"><span class="chip-dot"></span>✏️ Needs 1:1 tutoring</button>
+        <button type="button" class="chip" id="chip-postsec" onclick="toggleNeed('postsec')"><span class="chip-dot"></span>🏫 Post-secondary / college pathway</button>
+        <button type="button" class="chip" id="chip-career" onclick="toggleNeed('career')"><span class="chip-dot"></span>🔧 Career / trades pathway (CTE)</button>
       </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Attendance & Engagement</div>
         <div class="chips-wrap" id="chips-attendance">
-        <button type="button" class="chip" id="chip-truancy"><span class="chip-dot"></span>🚨 Chronic truancy / absences</button>
-        <button type="button" class="chip" id="chip-home-visit"><span class="chip-dot"></span>🏠 Family not responding — home visit needed</button>
-        <button type="button" class="chip" id="chip-re-engage"><span class="chip-dot"></span>🔄 Disengaged — needs re-engagement</button>
-        <button type="button" class="chip" id="chip-dropout"><span class="chip-dot"></span>⚠️ At risk of dropping out</button>
-        <button type="button" class="chip" id="chip-expelled"><span class="chip-dot"></span>📁 Expelled / returning from expulsion</button>
-        <button type="button" class="chip" id="chip-jjc-return"><span class="chip-dot"></span>🔓 Returning from JJC / Camp Sweeney</button>
+        <button type="button" class="chip" id="chip-truancy" onclick="toggleNeed('truancy')"><span class="chip-dot"></span>🚨 Chronic truancy / absences</button>
+        <button type="button" class="chip" id="chip-home-visit" onclick="toggleNeed('home-visit')"><span class="chip-dot"></span>🏠 Family not responding — home visit needed</button>
+        <button type="button" class="chip" id="chip-re-engage" onclick="toggleNeed('re-engage')"><span class="chip-dot"></span>🔄 Disengaged — needs re-engagement</button>
+        <button type="button" class="chip" id="chip-dropout" onclick="toggleNeed('dropout')"><span class="chip-dot"></span>⚠️ At risk of dropping out</button>
+        <button type="button" class="chip" id="chip-expelled" onclick="toggleNeed('expelled')"><span class="chip-dot"></span>📁 Expelled / returning from expulsion</button>
+        <button type="button" class="chip" id="chip-jjc-return" onclick="toggleNeed('jjc-return')"><span class="chip-dot"></span>🔓 Returning from JJC / Camp Sweeney</button>
       </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Social-Emotional & Behavioral</div>
         <div class="chips-wrap" id="chips-social">
-        <button type="button" class="chip" id="chip-mh"><span class="chip-dot"></span>🧠 Mental health concerns</button>
-        <button type="button" class="chip" id="chip-trauma"><span class="chip-dot"></span>💙 Trauma history / PTSD indicators</button>
-        <button type="button" class="chip" id="chip-behavior"><span class="chip-dot"></span>🛑 Behavioral challenges in school</button>
-        <button type="button" class="chip" id="chip-crisis"><span class="chip-dot"></span>🆘 Student in active crisis</button>
-        <button type="button" class="chip" id="chip-substance"><span class="chip-dot"></span>⚕️ Substance use concerns</button>
-        <button type="button" class="chip" id="chip-violence"><span class="chip-dot"></span>🛡️ Connected to violence / high-risk</button>
+        <button type="button" class="chip" id="chip-mh" onclick="toggleNeed('mh')"><span class="chip-dot"></span>🧠 Mental health concerns</button>
+        <button type="button" class="chip" id="chip-trauma" onclick="toggleNeed('trauma')"><span class="chip-dot"></span>💙 Trauma history / PTSD indicators</button>
+        <button type="button" class="chip" id="chip-behavior" onclick="toggleNeed('behavior')"><span class="chip-dot"></span>🛑 Behavioral challenges in school</button>
+        <button type="button" class="chip" id="chip-crisis" onclick="toggleNeed('crisis')"><span class="chip-dot"></span>🆘 Student in active crisis</button>
+        <button type="button" class="chip" id="chip-substance" onclick="toggleNeed('substance')"><span class="chip-dot"></span>⚕️ Substance use concerns</button>
+        <button type="button" class="chip" id="chip-violence" onclick="toggleNeed('violence')"><span class="chip-dot"></span>🛡️ Connected to violence / high-risk</button>
       </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Family & Basic Needs</div>
         <div class="chips-wrap" id="chips-family">
-        <button type="button" class="chip" id="chip-foster"><span class="chip-dot"></span>🏡 Foster care / child welfare involved</button>
-        <button type="button" class="chip" id="chip-probation"><span class="chip-dot"></span>⚖️ On probation / justice involved</button>
-        <button type="button" class="chip" id="chip-housing"><span class="chip-dot"></span>🏘️ Housing instability / homeless</button>
-        <button type="button" class="chip" id="chip-food"><span class="chip-dot"></span>🥗 Food insecurity / basic needs</button>
-        <button type="button" class="chip" id="chip-parent"><span class="chip-dot"></span>👨‍👩‍👧 Parent needs support / engagement</button>
-        <button type="button" class="chip" id="chip-language"><span class="chip-dot"></span>💬 Family language barrier</button>
-        <button type="button" class="chip" id="chip-infant"><span class="chip-dot"></span>👶 Infant (0–3) with developmental delays</button>
+        <button type="button" class="chip" id="chip-foster" onclick="toggleNeed('foster')"><span class="chip-dot"></span>🏡 Foster care / child welfare involved</button>
+        <button type="button" class="chip" id="chip-probation" onclick="toggleNeed('probation')"><span class="chip-dot"></span>⚖️ On probation / justice involved</button>
+        <button type="button" class="chip" id="chip-housing" onclick="toggleNeed('housing')"><span class="chip-dot"></span>🏘️ Housing instability / homeless</button>
+        <button type="button" class="chip" id="chip-food" onclick="toggleNeed('food')"><span class="chip-dot"></span>🥗 Food insecurity / basic needs</button>
+        <button type="button" class="chip" id="chip-parent" onclick="toggleNeed('parent')"><span class="chip-dot"></span>👨‍👩‍👧 Parent needs support / engagement</button>
+        <button type="button" class="chip" id="chip-language" onclick="toggleNeed('language')"><span class="chip-dot"></span>💬 Family language barrier</button>
+        <button type="button" class="chip" id="chip-infant" onclick="toggleNeed('infant')"><span class="chip-dot"></span>👶 Infant (0–3) with developmental delays</button>
       </div>
       </div>
       <div class="need-section">
         <div class="need-section-label">Life Stage & Transition</div>
         <div class="chips-wrap" id="chips-life">
-        <button type="button" class="chip" id="chip-pregnant"><span class="chip-dot"></span>🤱 Pregnant or parenting teen</button>
-        <button type="button" class="chip" id="chip-childcare"><span class="chip-dot"></span>👶 Needs childcare to attend school</button>
-        <button type="button" class="chip" id="chip-aging-out"><span class="chip-dot"></span>🔑 Aging out of foster care (18+)</button>
-        <button type="button" class="chip" id="chip-adult-ed"><span class="chip-dot"></span>📚 Adult learner returning to school</button>
-        <button type="button" class="chip" id="chip-transition"><span class="chip-dot"></span>🚀 Transitioning out of system</button>
-        <button type="button" class="chip" id="chip-employment"><span class="chip-dot"></span>💼 Needs employment / job training</button>
+        <button type="button" class="chip" id="chip-pregnant" onclick="toggleNeed('pregnant')"><span class="chip-dot"></span>🤱 Pregnant or parenting teen</button>
+        <button type="button" class="chip" id="chip-childcare" onclick="toggleNeed('childcare')"><span class="chip-dot"></span>👶 Needs childcare to attend school</button>
+        <button type="button" class="chip" id="chip-aging-out" onclick="toggleNeed('aging-out')"><span class="chip-dot"></span>🔑 Aging out of foster care (18+)</button>
+        <button type="button" class="chip" id="chip-adult-ed" onclick="toggleNeed('adult-ed')"><span class="chip-dot"></span>📚 Adult learner returning to school</button>
+        <button type="button" class="chip" id="chip-transition" onclick="toggleNeed('transition')"><span class="chip-dot"></span>🚀 Transitioning out of system</button>
+        <button type="button" class="chip" id="chip-employment" onclick="toggleNeed('employment')"><span class="chip-dot"></span>💼 Needs employment / job training</button>
       </div>
       </div>
 
@@ -498,6 +498,19 @@ button.chip.on .chip-dot{background:#0B7691}
 </div><!-- /wrap -->
 
 <script>
+// ── CHIP SELECTION — defined first so onclick handlers work immediately ──
+var selectedNeeds = new Set();
+function toggleNeed(id) {
+  var chip = document.getElementById('chip-' + id);
+  if (!chip) return;
+  if (selectedNeeds.has(id)) {
+    selectedNeeds.delete(id);
+    chip.classList.remove('on');
+  } else {
+    selectedNeeds.add(id);
+    chip.classList.add('on');
+  }
+}
 // ═══════════════════════════════════════════
 //  NEED CATEGORIES + CHIPS
 // ═══════════════════════════════════════════
@@ -740,7 +753,7 @@ const RESOURCES = [
 // ═══════════════════════════════════════════
 //  STATE
 // ═══════════════════════════════════════════
-let selectedNeeds = new Set();
+// selectedNeeds and toggleNeed defined at top of script
 let freeTextNeeds = [];
 let selectedResourceIds = new Set();
 let currentStep = 1;
@@ -763,17 +776,7 @@ function buildChips() {
   });
 }
 
-function toggleNeed(id) {
-  const chip = document.getElementById('chip-' + id);
-  if (!chip) { console.warn('chip not found:', id); return; }
-  if (selectedNeeds.has(id)) {
-    selectedNeeds.delete(id);
-    chip.classList.remove('on');
-  } else {
-    selectedNeeds.add(id);
-    chip.classList.add('on');
-  }
-}
+// toggleNeed defined at top of script
 
 function addFreeText() {
   const ta = document.getElementById('ft-need');
@@ -985,7 +988,7 @@ function submitReferral() {
 }
 
 function startOver() {
-  selectedNeeds = new Set();
+  selectedNeeds.clear();
   freeTextNeeds = [];
   selectedResourceIds = new Set();
   document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
